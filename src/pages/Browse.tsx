@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, Filter, Heart, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navbar from "@/components/Navbar";
 
 // Mock product data
 const mockProducts = [
@@ -112,6 +113,7 @@ const Browse = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">

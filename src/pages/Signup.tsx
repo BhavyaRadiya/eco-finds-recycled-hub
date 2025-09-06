@@ -8,6 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Mail, Lock, User, Eye, EyeOff, Leaf } from "lucide-react";
 import logoImage from "@/assets/logo.png";
+import Navbar from "@/components/Navbar";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -39,8 +40,10 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-secondary via-background to-accent/20 flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <div className="min-h-[calc(100vh-4rem)] bg-gradient-to-br from-secondary via-background to-accent/20 flex items-center justify-center p-4">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       
       <Card className="w-full max-w-md relative z-10 shadow-eco border-border/50 bg-card/95 backdrop-blur">
         <CardHeader className="text-center space-y-4">
@@ -252,6 +255,7 @@ const Signup = () => {
         </CardFooter>
       </Card>
     </div>
+  </div>
   );
 };
 
